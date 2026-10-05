@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Six sessions on building a professional reputation people can find and check: the search audit, a niche only you can claim, proof over claims, a real-data test of the post-more advice, owned and rented ground, and a system you can keep. Free, by Phoebe Fu.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="Learn Personal Branding with Phoebe">
+<meta property="og:description" content="A reputation is a search result. Six sessions on making yours worth finding, with the post-more advice tested on 302 real accounts in your browser.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-personal-branding-with-phoebe/">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-personal-branding-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Learn Personal Branding with Phoebe">
+<meta name="twitter:description" content="Does posting more grow engagement? Tested on 302 real accounts, counted in your browser.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-personal-branding-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Learn Personal Branding with Phoebe</title>
+<link rel="stylesheet" href="assets/style.css?v=3">
+<style>
+
+  .stats-row { display: flex; gap: 2.4rem; margin-top: 1.5rem; flex-wrap: wrap; }
+  .stat b { display: block; font-size: 2.1rem; font-weight: 800; line-height: 1.05; font-variant-numeric: tabular-nums; }
+  .stat span { font-size: .72rem; opacity: 1; text-transform: uppercase; letter-spacing: .09em; font-weight: 600; }
+
+  .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .course-card {
+    border: 1px solid var(--hairline);
+    border-top: 4px solid var(--diff, var(--indigo));
+    border-radius: var(--radius);
+    padding: 1.2rem 1.3rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-decoration: none;
+    color: var(--ink);
+    background: #fff;
+    transition: box-shadow .15s ease, border-color .15s ease, transform .15s ease;
+    position: relative;
+  }
+  .course-card:hover { border-color: var(--indigo-soft); border-top-color: var(--diff, var(--indigo)); box-shadow: 0 8px 28px rgba(var(--shadow-rgb),.16); transform: translateY(-3px); }
+  .course-card .cicon { font-size: 1.7rem; line-height: 1; }
+  .course-card .cnum { font-size: .72rem; font-weight: 700; color: var(--indigo); text-transform: uppercase; letter-spacing: .1em; }
+  .course-card h3 { font-size: 1.05rem; font-weight: 800; line-height: 1.3; }
+  .course-card p { font-size: .85rem; color: var(--muted); flex: 1; }
+  .course-card .meta { display: flex; gap: .4rem; flex-wrap: wrap; }
+
+  .diff-legend { display: flex; gap: 1rem; margin-top: 1.6rem; font-size: .74rem; color: var(--muted); font-weight: 600; flex-wrap: wrap; }
+  .diff-legend i { display: inline-block; width: .85rem; height: .35rem; border-radius: 999px; margin-right: .35rem; vertical-align: middle; }
+
+  .paths { margin-top: 2.6rem; }
+  .paths h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .3rem; }
+  .paths .plede { color: var(--muted); font-size: .92rem; margin-bottom: .8rem; }
+  .path { display: flex; gap: .55rem; align-items: center; padding: .75rem 0; border-bottom: .5px solid var(--hairline); flex-wrap: wrap; }
+  .path:last-child { border-bottom: none; }
+  .path b { min-width: 15.5rem; font-size: .9rem; }
+  .path .pstep { background: var(--indigo-50); color: var(--indigo); border-radius: 999px; padding: .16rem .68rem; font-weight: 700; font-size: .8rem; text-decoration: none; transition: all .12s ease; }
+  .path .pstep:hover { background: var(--indigo); color: #fff; }
+  .path .parr { color: var(--muted); font-weight: 700; }
+
+  .mm-section { margin-top: 1.6rem; }
+  .mm-section h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .2rem; }
+  .mm-section .mm-lede { color: var(--muted); font-size: .92rem; margin-bottom: .4rem; }
+  .mm-wrap { border: 1px solid var(--hairline); border-radius: var(--radius); background: linear-gradient(180deg,#fff,var(--indigo-50)); padding: .6rem; overflow-x: auto; }
+  .mm-svg { width: 100%; height: auto; display: block; max-width: 60rem; margin: 0 auto; min-width: 34rem; }
+  .mm-link { cursor: pointer; text-decoration: none; }
+  .mm-node rect { transition: opacity .15s ease, filter .15s ease; }
+  .mm-node text { pointer-events: none; }
+  .mm-link:hover .mm-node rect { filter: brightness(1.06); }
+  .mm-edge { transition: opacity .15s ease; }
+
+  .not-this { border: 1px solid var(--hairline); border-left: 4px solid var(--clay); border-radius: var(--radius); background: #fff; padding: 1.1rem 1.3rem; margin-top: 1.2rem; }
+  .not-this h3 { font-size: .95rem; font-weight: 800; margin-bottom: .5rem; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn with Phoebe · Business</div>
+    <h1>Learn <span class="accent">Personal Branding</span> with Phoebe</h1>
+    <p class="sub">Before anyone reads what you say about yourself, they search your name, and the first page that comes back is the version of you they meet. Personal branding, done honestly, is the slow work of making that page show your actual work: a niche only you can claim, proof instead of adjectives, a cadence you can keep, and ground you own. Six sessions, one constructed running case, and one piece of advice everyone repeats, post more, tested on 302 real accounts and 22,657 public answers counted in your browser. Across creators it looks like a law. Against their own quiet weeks, it buys volume and no growth.</p>
+    <div class="stats-row">
+      <div class="stat"><b data-count="6">6</b><span>sessions</span></div>
+      <div class="stat"><b data-count="302">302</b><span>real accounts on the bench</span></div>
+      <div class="stat"><b data-count="22657">22,657</b><span>public answers counted</span></div>
+      <div class="stat"><b data-count="10">10</b><span>results in the audit</span></div>
+      <div class="stat"><b data-count="45">45</b><span>min per session</span></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>The six sessions 🎯 <span style="font-size:.85rem;font-weight:600;color:var(--muted)">· from what a stranger finds to a system you keep</span></h2>
+      <p class="plede">The running case is <strong>Ines Calloway, a constructed mid-career data analyst</strong> who forecasts demand for a regional grocery chain and wants the right people to find her. She is invented for teaching, and every page says so. Alongside her, every build-along runs on your own name and your own work.</p>
+    </div>
+
+    <div class="course-grid">
+      <a class="course-card" href="courses/01-a-reputation-is-a-search-result.html" style="--diff:#34D399">
+        <span class="cicon">🔎</span>
+        <span class="cnum">Session 1 · foundations</span>
+        <h3>A reputation is a search result</h3>
+        <p>Before anyone reads your profile, they search your name. Ten results, four kinds, two honest counts, and the one result you will add first. Build-along: the audit on your own name.</p>
+        <span class="meta"><span class="pill amber">▶ Start here</span></span>
+      </a>
+      <a class="course-card" href="courses/02-the-onliness-test.html" style="--diff:#FBBF24">
+        <span class="cicon">🧭</span>
+        <span class="cnum">Session 2 · core</span>
+        <h3>Your niche: the onliness test</h3>
+        <p>Positioning for one person: the line about your work nobody else could sign. The competitor swap, Kevin Kelly's arithmetic for a small niche, and a measured checker for your line.</p>
+        <span class="meta"><span class="pill">audience, outcome, proof</span></span>
+      </a>
+      <a class="course-card" href="courses/03-show-the-work.html" style="--diff:#FBBF24">
+        <span class="cicon">🛠️</span>
+        <span class="cnum">Session 3 · core</span>
+        <h3>Voice and proof: show the work</h3>
+        <p>Proof over claims. Austin Kleon's ten rules for showing process, a ladder from claim to artefact someone else used, and voice as a set of choices. Build-along: one real piece of work, made public.</p>
+        <span class="meta"><span class="pill">the proof ladder</span></span>
+      </a>
+      <a class="course-card" href="courses/04-the-consistency-bench.html" style="--diff:#F87171">
+        <span class="cicon">🎛️</span>
+        <span class="cnum">Session 4 · bench night</span>
+        <h3>The consistency bench</h3>
+        <p>Does posting more grow engagement? 302 real accounts and 22,657 answers counted in your browser: the cross-creator chart, the survivor trap, the same creator against themselves, and a break button.</p>
+        <span class="meta"><span class="pill amber">★ the bench</span></span>
+      </a>
+      <a class="course-card" href="courses/05-owned-and-rented-ground.html" style="--diff:#FB923C">
+        <span class="cicon">🏡</span>
+        <span class="cnum">Session 5 · deeper</span>
+        <h3>Platforms and formats: owned and rented ground</h3>
+        <p>Where your readers actually read, the audience you own against the one you rent, digital sharecropping, and choosing a format for the reader rather than the platform's fashion.</p>
+        <span class="meta"><span class="pill">owned vs rented</span></span>
+      </a>
+      <a class="course-card" href="courses/06-a-system-you-keep.html" style="--diff:#FB923C">
+        <span class="cicon">🌱</span>
+        <span class="cnum">Session 6 · deeper</span>
+        <h3>A system you keep</h3>
+        <p>A cadence you can sustain, an idea bank that refills itself, and a quarterly re-run of the session 1 audit so the before and after are evidence. Final scorecard.</p>
+        <span class="meta"><span class="pill amber">🔒 final scorecard</span></span>
+      </a>
+    </div>
+
+    <div class="diff-legend">
+      <span><i style="background:#34D399"></i>foundations</span>
+      <span><i style="background:#FBBF24"></i>core</span>
+      <span><i style="background:#FB923C"></i>deeper</span>
+      <span><i style="background:#F87171"></i>bench night</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>Your passport 🎫</h2>
+      <p class="plede">Clear all three quiz questions in a session and it gets stamped. Six stamps means you can audit your own first page, write a positioning line you can defend, turn real work into public proof, read a "post more" chart for what it does and does not show, and run the whole thing on a cadence you can keep. Stamps live in this browser only.</p>
+    </div>
+    <div class="pp-strip"></div>
+  </section>
+
+  <section class="section">
+    <div class="not-this">
+      <h3>What this is not, so you land in the right place 🧭</h3>
+      <table class="clean">
+        <tr><th>If your question is</th><th>Go here instead</th></tr>
+        <tr><td>How do I name a company, set its positioning and build its visual identity?</td><td><a href="https://phoebefu6.github.io/learn-ai-branding-with-phoebe/">AI Branding ↗</a></td></tr>
+        <tr><td>How do I produce, repurpose and edit content at volume, with or without AI tools?</td><td><a href="https://phoebefu6.github.io/learn-ai-content-with-phoebe/">AI Content ↗</a></td></tr>
+        <tr><td>How do funnels, segments and channels work as a marketing system for a business?</td><td><a href="https://phoebefu6.github.io/learn-marketing-with-phoebe/">Marketing ↗</a></td></tr>
+        <tr><td>How do I say it well, in a meeting, an email or a talk?</td><td><a href="https://phoebefu6.github.io/learn-communication-with-phoebe/">Communication ↗</a></td></tr>
+        <tr><td><strong>I want people who look me up to find work worth trusting, and I want to know which advice about that is real.</strong></td><td><strong>you are in the right place</strong></td></tr>
+      </table>
+      <p style="margin-top:.7rem;font-size:.86rem;color:var(--muted)"><strong>A reputation for one person.</strong> What a stranger finds, what you want them to find, the proof that gets it there, and the evidence on cadence. Company branding, content production and marketing systems are taught next door and linked from here rather than repeated.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="paths">
+      <h2>Choose your path 🗺️</h2>
+      <p class="plede">Three doors into the same conviction: show the work, and let a stranger check it.</p>
+      <div class="path"><b>🔎 I have a review or a job search coming</b>
+        <a class="pstep" href="courses/01-a-reputation-is-a-search-result.html">1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/02-the-onliness-test.html">2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/03-show-the-work.html">3</a>
+        <span style="font-size:.82rem;color:var(--muted)">audit the first page, write the line, publish one piece of proof</span>
+      </div>
+      <div class="path"><b>📈 I was told to post more</b>
+        <a class="pstep" href="courses/04-the-consistency-bench.html">4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/06-a-system-you-keep.html">6</a>
+        <span style="font-size:.82rem;color:var(--muted)">what cadence buys on real data, then a cadence you can keep</span>
+      </div>
+      <div class="path"><b>🌱 The whole system</b>
+        <a class="pstep" href="courses/01-a-reputation-is-a-search-result.html">1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/02-the-onliness-test.html">2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/03-show-the-work.html">3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/04-the-consistency-bench.html">4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/05-owned-and-rented-ground.html">5</a><span class="parr">→</span>
+        <a class="pstep" href="courses/06-a-system-you-keep.html">6</a>
+        <span style="font-size:.82rem;color:var(--muted)">from a search audit to a reputation you maintain on purpose</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>What is honest here 🧾</h2>
+      <p class="plede">Creator advice travels with numbers that have no method behind them. Each claim on these pages carries its status, and where nothing citable exists, the page says that instead.</p>
+    </div>
+    <table class="clean">
+      <tr><th>Claim</th><th>Status</th></tr>
+      <tr><td>Every bench figure: the correlations, the busiest and quietest thirds, the survivors, the shuffles</td><td><strong>Really computed</strong> in your browser from 302 accounts and 22,657 answers in the public Data Science Stack Exchange data dump (April 2024, CC BY-SA), names and ids removed</td></tr>
+      <tr><td>The positioning-line checker</td><td><strong>A heuristic.</strong> It counts words in four printed lists; it does not judge a line, and it says so on the widget</td></tr>
+      <tr><td>Kevin Kelly's 1,000 true fans</td><td><strong>Read at source,</strong> both the 2008 original and the shorter rewrite on the same page, which frame the  differently, plus the challenge he published on his own site</td></tr>
+      <tr><td>Buffer's finding that more LinkedIn posts lift reach per post</td><td><strong>Read at source;</strong> company data on its own users, taught as the disagreement with the bench, not as a verdict</td></tr>
+      <tr><td>"Post daily to grow"</td><td><strong>No source found.</strong> Taught as advice without evidence</td></tr>
+      <tr><td>"Your brand is what people say about you when you're not in the room", Jeff Bezos</td><td><strong>Attribution unverified.</strong> No primary source located</td></tr>
+      <tr><td>Ines Calloway, her search results, drafts and calendar</td><td><strong>Constructed,</strong> for teaching</td></tr>
+    </table>
+  </section>
+
+  <section class="section mm-section">
+    <h2>The knowledge map 🧠</h2>
+    <p class="mm-lede">The whole path at a glance - hover a session to spotlight its concepts, click any node to jump in.</p>
+    <div class="mm-wrap"><div id="mindmap"></div></div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>learn-personal-branding-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span>Neighbours on the shelf: <a href="https://phoebefu6.github.io/learn-ai-branding-with-phoebe/">AI Branding ↗</a> &nbsp;·&nbsp; <a href="https://phoebefu6.github.io/learn-ai-content-with-phoebe/">AI Content ↗</a> &nbsp;·&nbsp; <a href="https://phoebefu6.github.io/learn-communication-with-phoebe/">Communication ↗</a></span>
+  </footer>
+
+</main>
+
+<script>
+window.MINDMAP_DATA = {
+ "title": "Personal\nBranding",
+ "centerColor": "#74283A",
+ "sessions": [
+  {
+   "label": "A reputation is\na search result",
+   "href": "courses/01-a-reputation-is-a-search-result.html",
+   "color": "#34D399",
+   "concepts": [
+    {
+     "label": "The first page is the CV",
+     "href": "courses/01-a-reputation-is-a-search-result.html"
+    },
+    {
+     "label": "Removing is not deleting",
+     "href": "courses/01-a-reputation-is-a-search-result.html"
+    },
+    {
+     "label": "A quote nobody can source",
+     "href": "courses/01-a-reputation-is-a-search-result.html"
+    }
+   ]
+  },
+  {
+   "label": "Your niche: the\nonliness test",
+   "href": "courses/02-the-onliness-test.html",
+   "color": "#FBBF24",
+   "concepts": [
+    {
+     "label": "The onliness test",
+     "href": "courses/02-the-onliness-test.html"
+    },
+    {
+     "label": "The competitor swap",
+     "href": "courses/02-the-onliness-test.html"
+    },
+    {
+     "label": "1,000 true fans, checked",
+     "href": "courses/02-the-onliness-test.html"
+    }
+   ]
+  },
+  {
+   "label": "Voice and proof:\nshow the work",
+   "href": "courses/03-show-the-work.html",
+   "color": "#FBBF24",
+   "concepts": [
+    {
+     "label": "Proof over claims",
+     "href": "courses/03-show-the-work.html"
+    },
+    {
+     "label": "The proof ladder",
+     "href": "courses/03-show-the-work.html"
+    },
+    {
+     "label": "Voice is choices",
+     "href": "courses/03-show-the-work.html"
+    }
+   ]
+  },
+  {
+   "label": "The consistency\nbench",
+   "href": "courses/04-the-consistency-bench.html",
+   "color": "#F87171",
+   "concepts": [
+    {
+     "label": "Across vs within",
+     "href": "courses/04-the-consistency-bench.html"
+    },
+    {
+     "label": "The survivor trap",
+     "href": "courses/04-the-consistency-bench.html"
+    },
+    {
+     "label": "Cadence is a volume dial",
+     "href": "courses/04-the-consistency-bench.html"
+    }
+   ]
+  },
+  {
+   "label": "Owned and\nrented ground",
+   "href": "courses/05-owned-and-rented-ground.html",
+   "color": "#FB923C",
+   "concepts": [
+    {
+     "label": "Digital sharecropping",
+     "href": "courses/05-owned-and-rented-ground.html"
+    },
+    {
+     "label": "Where readers read",
+     "href": "courses/05-owned-and-rented-ground.html"
+    },
+    {
+     "label": "Format follows reader",
+     "href": "courses/05-owned-and-rented-ground.html"
+    }
+   ]
+  },
+  {
+   "label": "A system\nyou keep",
+   "href": "courses/06-a-system-you-keep.html",
+   "color": "#FB923C",
+   "concepts": [
+    {
+     "label": "A cadence you can keep",
+     "href": "courses/06-a-system-you-keep.html"
+    },
+    {
+     "label": "The idea bank",
+     "href": "courses/06-a-system-you-keep.html"
+    },
+    {
+     "label": "The quarterly re-audit",
+     "href": "courses/06-a-system-you-keep.html"
+    }
+   ]
+  }
+ ]
+};
+</script>
+<script src="assets/mindmap.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+</body>
+</html>

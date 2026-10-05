@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Session 4 of 6. Does posting more grow engagement? 302 real accounts and 22,657 answers from the public Stack Exchange data dump, counted in your browser. Across creators the busiest earn nine times the score a week; per answer, and against their own quiet weeks, the effect is gone.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="The consistency bench - learn personal branding with phoebe">
+<meta property="og:description" content="Session 4 of 6. Post more, tested on real rows: the cross-creator picture, the survivor trap, the same creator against themselves, and a break button.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-personal-branding-with-phoebe/courses/04-the-consistency-bench.html">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-personal-branding-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The consistency bench - learn personal branding with phoebe">
+<meta name="twitter:description" content="Session 4 of 6. Post more, tested on 302 real accounts.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-personal-branding-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Session 4 · The consistency bench - learn personal branding with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=3">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-personal-branding-with-phoebe</a> / Session 4 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Personal Branding with Phoebe · Session 4 of 6</div>
+    <h1>The consistency <span class="accent">bench</span></h1>
+    <p class="sub">The most repeated advice in personal branding is a cadence: post daily, post three times a week, never miss a week. Nobody repeating it shows the data. Tonight the advice meets some. Three hundred and two real accounts that built a public reputation by answering questions on Data Science Stack Exchange, every one of their 22,657 answers from May 2014 to March 2024, counted in 28-day blocks in your browser. The question is the one the advice answers without asking: does posting more often predict more engagement? Six views of the same rows give three different answers, and only one of them is the answer people quote.</p>
+    <div class="chip-row">
+      <span class="chip level">🔴 Bench night</span>
+      <span class="chip audience">Bring the cadence you planned in session 3</span>
+      <span class="chip audience">No code tonight, all clicking</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:2">3-12 · How to read the bench</span>
+      <span class="a3" style="flex:6">12-40 · Six views and a break button</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we start</h2>
+    </div>
+    <p class="lede">A bench is a fixed set of rows and a fixed set of questions, so that when two views give two answers the only thing that changed was the view. The rows are real and public: the Stack Exchange network publishes its whole history as a data dump under a Creative Commons licence, and the bench keeps, for every account with at least 20 answers, how many answers it posted in each 28-day block and what score those answers earned. Names, ids and text are stripped; each account is a number. Ines (constructed) planned a cadence in session 3. Tonight she finds out what a cadence buys.</p>
+
+    <div class="legend">
+      <span class="pill">🎫 Clear all three quiz questions to stamp your passport</span>
+      <span class="pill">measured = counted from the 302 accounts</span>
+      <span class="pill">r = correlation, from -1 to 1, 0 is none</span>
+    </div>
+
+    <div class="callout win">
+      <p><strong>★ What you walk out with tonight.</strong> The measured answer to "does posting more grow engagement" on real rows, the difference between comparing creators with each other and comparing a creator with themselves, the survivor trap named and counted, and the honest version of the cadence advice: what posting more does buy, and what it does not.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-1">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers what the bench measures</span>
+      <h2>Two ways to compare, and why they disagree</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">There are two questions hiding inside "does posting more work". One compares people: do the creators who post a lot do better than the ones who post a little? The other compares a person with themselves: in the weeks this creator posts more, do they do better than in their own quiet weeks? The advice is about the second question. Almost every chart quoted for it answers the first.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two panels. Left, across creators: three creators' timelines of 28-day blocks, one busy, one middling, one quiet, compared with each other; the comparison mixes cadence with everything else that differs between people, such as when they started and how big they already were. Right, within one creator: the same person's busy blocks compared with their own quiet blocks, which holds the person fixed.">
+        <defs>
+          <filter id="s4aSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="53" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="s4aHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#AF4B5D" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="s4aAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#2B1A21" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .s4aH { font: 800 12px Inter, sans-serif; fill: #2B1A21; }
+          .s4aL { font: 600 12px Inter, sans-serif; fill: #2B1A21; }
+          .s4aS { font: 400 11px Inter, sans-serif; fill: #6B5560; }
+          .s4aB { font: 800 11px Inter, sans-serif; fill: #6B3D00; }
+          .s4aA { font: 700 11px Inter, sans-serif; fill: #74283A; }
+          .s4aN { font: 400 12px Inter, sans-serif; fill: #6B5560; }
+        </style>
+
+        <text class="s4aH" x="30" y="26">ACROSS CREATORS</text>
+        <text class="s4aH" x="470" y="26">WITHIN ONE CREATOR</text>
+
+        <g filter="url(#s4aSk)" fill="none" stroke="#2B1A21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- left panel -->
+          <rect x="30" y="40" width="400" height="240" rx="10" fill="#FFFFFF" transform="rotate(-0.3 230 160)"/>
+          <!-- creator A busy -->
+          <rect x="120" y="70" width="22" height="26" rx="3" fill="url(#s4aHc)"/>
+          <rect x="148" y="70" width="22" height="26" rx="3" fill="url(#s4aHc)"/>
+          <rect x="176" y="70" width="22" height="26" rx="3" fill="url(#s4aHc)"/>
+          <rect x="204" y="70" width="22" height="26" rx="3" fill="url(#s4aHc)"/>
+          <rect x="232" y="70" width="22" height="26" rx="3" fill="url(#s4aHc)"/>
+          <rect x="260" y="70" width="22" height="26" rx="3" fill="url(#s4aHc)"/>
+          <!-- creator B -->
+          <rect x="120" y="130" width="22" height="26" rx="3" fill="url(#s4aHc)"/>
+          <rect x="148" y="130" width="22" height="26" rx="3" fill="#FFFFFF"/>
+          <rect x="176" y="130" width="22" height="26" rx="3" fill="url(#s4aHc)"/>
+          <rect x="204" y="130" width="22" height="26" rx="3" fill="#FFFFFF"/>
+          <rect x="232" y="130" width="22" height="26" rx="3" fill="url(#s4aHc)"/>
+          <!-- creator C quiet -->
+          <rect x="120" y="190" width="22" height="26" rx="3" fill="#FFFFFF"/>
+          <rect x="148" y="190" width="22" height="26" rx="3" fill="#FFFFFF"/>
+          <rect x="176" y="190" width="22" height="26" rx="3" fill="url(#s4aHc)"/>
+          <rect x="204" y="190" width="22" height="26" rx="3" fill="#FFFFFF"/>
+          <!-- compare arrow -->
+          <path d="M320 92 C350 120 350 170 320 200" marker-end="url(#s4aAr)" stroke="#9A5800"/>
+          <!-- right panel -->
+          <rect x="460" y="40" width="390" height="240" rx="10" fill="#FCEFF2" transform="rotate(0.3 655 160)"/>
+          <rect x="500" y="110" width="22" height="26" rx="3" fill="url(#s4aHc)"/>
+          <rect x="528" y="110" width="22" height="26" rx="3" fill="#FFFFFF"/>
+          <rect x="556" y="110" width="22" height="26" rx="3" fill="url(#s4aHc)"/>
+          <rect x="584" y="110" width="22" height="26" rx="3" fill="url(#s4aHc)"/>
+          <rect x="612" y="110" width="22" height="26" rx="3" fill="#FFFFFF"/>
+          <rect x="640" y="110" width="22" height="26" rx="3" fill="#FFFFFF"/>
+          <rect x="668" y="110" width="22" height="26" rx="3" fill="url(#s4aHc)"/>
+          <rect x="696" y="110" width="22" height="26" rx="3" fill="#FFFFFF"/>
+          <rect x="724" y="110" width="22" height="26" rx="3" fill="url(#s4aHc)"/>
+          <rect x="752" y="110" width="22" height="26" rx="3" fill="url(#s4aHc)"/>
+          <path d="M567 144 C590 176 640 176 651 146" marker-end="url(#s4aAr)" stroke="#9A5800"/>
+        </g>
+
+        <text class="s4aL" x="50" y="88">busy</text>
+        <text class="s4aL" x="50" y="148">middling</text>
+        <text class="s4aL" x="50" y="208">quiet</text>
+        <text class="s4aB" x="360" y="150">compare</text>
+        <text class="s4aS" x="50" y="244">also differ: start year, field, skill,</text>
+        <text class="s4aS" x="50" y="260">how big they already were</text>
+
+        <text class="s4aL" x="500" y="88">one creator, block by block</text>
+        <text class="s4aB" x="560" y="196">busy block vs own quiet block</text>
+        <text class="s4aS" x="500" y="232">the person is held fixed: same skill,</text>
+        <text class="s4aS" x="500" y="248">same field, same history</text>
+
+        <text class="s4aN" x="30" y="312">Hatched = a block with answers posted. The left panel asks who does better; the right asks what posting more does.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the advice "post more" is a claim about the right panel, and the charts quoted for it are almost always the left one</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Why answers on Stack Exchange are a fair test<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Answering questions in public is a reputation built from posted work: each answer is a small piece of shown work with a name on it, readers vote on it, and the score stays attached. The dump gives every answer's date and score for every account, including the accounts that stopped, which is what makes the survivor trap measurable instead of merely warned about. Data Science Stack Exchange is small enough to ship as a sample and close to the field of Ines (constructed) and most of the people who read these sessions.</p>
+        <p>The honest limits, stated before any number: it is a search-driven site with no follower graph, so engagement here is score per answer, not audience size. Feed platforms where an algorithm decides reach may behave differently, and Part 3 sets one company's contrary finding next to this one.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Exactly what is counted<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>Creators.</strong> Accounts with 20 or more answers: 302 of them, holding 22,657 answers. <strong>Blocks.</strong> 28-day periods starting Monday 12 May 2014, 129 blocks to the end of March 2024. <strong>Cadence.</strong> Answers per week: across creators, a creator's answers divided by the weeks from their first to their last active block; within a creator, the answers in one block divided by four. <strong>Engagement.</strong> Score, which is upvotes minus downvotes at the time of the April 2024 dump, summed per week or averaged per answer. <strong>Survivors.</strong> Creators who answered at least once in the final seven blocks, roughly the last 28 weeks. That cut-off is a choice, made once and printed on the widget.</p>
+        <p>The Python reference run recomputes all six views from the same sample and agrees with the browser on every number to six decimals.</p>
+      </div>
+    </details>
+  </section>
+
+  <section class="section" id="bench">
+    <div class="section-kicker">
+      <span class="klabel">Build-along · the bench</span>
+      <h2>Six views of 302 creators, computed in front of you</h2>
+      <span class="tag demo">★ 26 min · the main event</span>
+    </div>
+    <p class="lede">Work down the six views in order. For each, read the verdict line, then the two correlations, then the five bars underneath, which split the points into five equal groups by cadence and show the average engagement in each. Say out loud what changed and what did not before you click the next one. Then press the break button on the three same-creator views.</p>
+
+    <div id="cadence-bench"></div>
+
+    <div class="callout tip">
+      <p><strong>Read it in this order.</strong> The first view is the chart everyone draws, and it is the anti-lever: it looks like proof that posting more pays. The second changes only the measure, from per week to per answer. The third changes only who is in the data. The last three hold the person fixed. The break button shuffles each creator's cadence among their own blocks; if a view still shows a relationship after that, the bench is measuring an artefact, and it does not.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-2">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers what the six views find</span>
+      <h2>Same rows, three different answers</h2>
+      <span class="tag concept">6 min live</span>
+    </div>
+    <p class="lede">The bench computes these live; the numbers here are the ones it produces, written down so they can be argued with after class. Correlations near 0 mean cadence tells you nothing about engagement in that view; near 1, a lot.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Seven horizontal bars of correlation between cadence and engagement, from a zero line. Across creators, score per week: 0.584. Across creators, score per answer: minus 0.070. Survivors only, score per week: 0.876. Same creator, total score per block: 0.660. Same creator, score per answer: minus 0.005. Same creator, next block per answer: 0.004. Same creator total, after shuffling: minus 0.010.">
+        <defs>
+          <filter id="s4bSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="59" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="s4bHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#AF4B5D" stroke-width="1" opacity=".55"/></pattern>
+        </defs>
+        <style>
+          .s4bH { font: 800 12px Inter, sans-serif; fill: #2B1A21; }
+          .s4bL { font: 600 12px Inter, sans-serif; fill: #2B1A21; }
+          .s4bS { font: 400 11px Inter, sans-serif; fill: #6B5560; }
+          .s4bB { font: 800 12px Inter, sans-serif; fill: #6B3D00; }
+          .s4bV { font: 800 13px Inter, sans-serif; fill: #74283A; }
+          .s4bN { font: 400 12px Inter, sans-serif; fill: #6B5560; }
+        </style>
+
+        <text class="s4bH" x="30" y="26">CORRELATION OF CADENCE WITH ENGAGEMENT, BY VIEW</text>
+        <text class="s4bS" x="470" y="48" text-anchor="middle">0</text>
+        <text class="s4bS" x="770" y="48" text-anchor="middle">1.0</text>
+
+        <g filter="url(#s4bSk)" fill="none" stroke="#2B1A21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M470 56 L470 340" stroke="#6B5560"/>
+          <path d="M770 56 L770 340" stroke="#EFE1E5"/>
+          <rect x="470" y="64" width="175" height="24" rx="3" fill="#9A5800" stroke="#9A5800"/>
+          <rect x="449" y="104" width="21" height="24" rx="3" fill="url(#s4bHc)"/>
+          <rect x="470" y="144" width="263" height="24" rx="3" fill="#9A5800" stroke="#9A5800"/>
+          <rect x="470" y="184" width="198" height="24" rx="3" fill="url(#s4bHc)"/>
+          <path d="M468 224 L468 248"/>
+          <path d="M472 264 L472 288"/>
+          <path d="M467 304 L467 328" stroke="#6B5560"/>
+        </g>
+
+        <text class="s4bL" x="440" y="81" text-anchor="end">Across creators, score per week</text>
+        <text class="s4bV" x="800" y="81">0.584</text>
+        <text class="s4bL" x="440" y="121" text-anchor="end">Across creators, score per answer</text>
+        <text class="s4bV" x="800" y="121">-0.070</text>
+        <text class="s4bL" x="440" y="161" text-anchor="end">Survivors only, score per week</text>
+        <text class="s4bV" x="800" y="161">0.876</text>
+        <text class="s4bL" x="440" y="201" text-anchor="end">Same creator, total per block</text>
+        <text class="s4bV" x="800" y="201">0.660</text>
+        <text class="s4bL" x="440" y="241" text-anchor="end">Same creator, per answer</text>
+        <text class="s4bV" x="800" y="241">-0.005</text>
+        <text class="s4bL" x="440" y="281" text-anchor="end">Same creator, next block per answer</text>
+        <text class="s4bV" x="800" y="281">0.004</text>
+        <text class="s4bS" x="440" y="321" text-anchor="end">same creator total, shuffled (seed 1)</text>
+        <text class="s4bV" x="800" y="321">-0.010</text>
+
+        <text class="s4bN" x="30" y="366">Ochre = the two views that make "post more" look like a law. Both compare different people; the second keeps only the ones still active.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the bars that are long are the ones that compare people or count volume; the ones that ask about growth are flat</figcaption>
+    </figure>
+
+    <table class="clean">
+      <tr><th>View</th><th>Points</th><th>r</th><th>Rank r</th><th>What it says</th></tr>
+      <tr><td>Across creators, score per week</td><td>302 creators</td><td><strong>0.584</strong></td><td>0.802</td><td>Busiest third: 1.68 answers and 3.13 score a week. Quietest third: 0.15 answers and 0.34 score a week</td></tr>
+      <tr><td>Across creators, score per answer</td><td>302</td><td>-0.070</td><td>-0.180</td><td>Per answer the busiest third earn 1.85, the quietest 2.24</td></tr>
+      <tr><td>Survivors only</td><td>51</td><td><strong>0.876</strong></td><td>0.870</td><td>Started later (2019.4 against 2017.8) and earn less per answer (1.32 against 2.12)</td></tr>
+      <tr><td>Same creator, total per block</td><td>12,203 blocks</td><td>0.660</td><td>0.785</td><td>Busier block, more total score that block</td></tr>
+      <tr><td>Same creator, per answer</td><td>4,498 blocks</td><td><strong>-0.005</strong></td><td>0.104</td><td>No reliable change per answer; the sign depends on the measure</td></tr>
+      <tr><td>Same creator, next block per answer</td><td>2,660 pairs</td><td><strong>0.004</strong></td><td>0.054</td><td>A busy block does not lift the next one</td></tr>
+    </table>
+    <p class="mono" style="margin-top:6px">All measured from the shipped sample; the Python reference agrees on every value.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Finding 1: across creators, the gap is volume, not each post landing better<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The busiest third of creators post about eleven times as often as the quietest third (1.68 against 0.15 answers a week) and earn about nine times the score a week (3.13 against 0.34). That is the chart behind the advice. Change only the measure, from score per week to score per answer, and the relationship turns slightly negative: the busiest third earn 1.85 per answer and the quietest 2.24. The busy creators collect more score because they post more answers, not because each answer does better. Per post, they do a little worse.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Finding 2: the survivor trap makes the picture look stronger<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Study only the accounts still answering at the end, the way anyone does who looks at today's successful creators, and the cross-creator correlation jumps from 0.584 to 0.876. Nothing about posting changed; the quiet ones who stopped left the data. The 51 survivors also started later on average (2019.4 against 2017.8 for all 302) and earn less per answer (1.32 against 2.12), because the site's voting fell year after year (Part 3). The view that feels most like evidence is the most filtered one.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Finding 3: the same creator, against themselves: arithmetic yes, growth no<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Hold the person fixed. In a creator's busier blocks they earn more total score that block (r 0.660): more answers, more votes, which is arithmetic. Per answer, a busier block earns no reliably different score from that creator's own quieter blocks (r -0.005). And a busy block does not lift the score per answer of the block after it (r 0.004), which is the specific claim "post more to grow" makes. On these rows, cadence is a volume dial: it buys more total engagement in the period you post, in proportion, and nothing that compounds afterwards.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The honest dip: the rank version disagrees in sign<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>For the same-creator per-answer view the Pearson correlation is -0.005 and the rank (Spearman) correlation is 0.104. Scores are heavy-tailed, a few answers collect dozens of votes, and the two statistics weight those differently. When two reasonable measures of the same thing disagree in sign and both sit near zero, the honest reading is that there is no effect worth building a plan on, not that one of them is the real answer. The break button sets the scale: shuffled, the same-creator views land between about -0.03 and 0.03.</p>
+      </div>
+    </details>
+  </section>
+
+  <section class="section" id="part-3">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers the anti-lever and its honest nuance</span>
+      <h2>"Post more" is read off the wrong chart</h2>
+      <span class="tag concept">4 min live</span>
+    </div>
+    <p class="lede">The anti-lever is not posting more. It is reading "post more" off a chart that compares different people, filtered to the ones who lasted, on a platform whose attention was moving underneath all of them. The bench can show each of those three things separately.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Left: a hand-drawn line of the site-wide mean score per answer by year, falling from 7.36 in 2014 to 0.82 in 2023. Right: 302 creators narrowing to 51 survivors still answering at the end; the survivors started on average in 2019.4 rather than 2017.8 and earn 1.32 per answer rather than 2.12.">
+        <defs>
+          <filter id="s4cSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="61" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="s4cHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#AF4B5D" stroke-width="1" opacity=".5"/></pattern>
+        </defs>
+        <style>
+          .s4cH { font: 800 12px Inter, sans-serif; fill: #2B1A21; }
+          .s4cL { font: 600 12px Inter, sans-serif; fill: #2B1A21; }
+          .s4cS { font: 400 11px Inter, sans-serif; fill: #6B5560; }
+          .s4cB { font: 800 12px Inter, sans-serif; fill: #6B3D00; }
+          .s4cV { font: 800 16px Inter, sans-serif; fill: #74283A; }
+          .s4cN { font: 400 12px Inter, sans-serif; fill: #6B5560; }
+        </style>
+
+        <text class="s4cH" x="30" y="26">THE GROUND MOVED, AND ONLY THE ONES WHO STAYED ARE COUNTED</text>
+        <text class="s4cS" x="70" y="52">site-wide mean score per answer, every account</text>
+
+        <g filter="url(#s4cSk)" fill="none" stroke="#2B1A21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M70 250 L450 250" stroke="#6B5560"/>
+          <path d="M70 250 L70 66" stroke="#6B5560"/>
+          <path d="M70 84 L110 163 L150 169 L190 172 L230 193 L270 211 L310 219 L350 228 L390 228 L430 232" stroke="#AF4B5D" stroke-width="2.6"/>
+          <!-- funnel -->
+          <rect x="530" y="70" width="300" height="40" rx="8" fill="url(#s4cHc)" transform="rotate(-0.4 680 90)"/>
+          <path d="M540 116 L640 170 M820 116 L720 170" stroke="#6B5560"/>
+          <rect x="630" y="176" width="100" height="40" rx="8" fill="#9A5800" stroke="#9A5800" transform="rotate(0.6 680 196)"/>
+        </g>
+
+        <text class="s4cV" x="80" y="78">7.36</text>
+        <text class="s4cV" x="398" y="212">0.82</text>
+        <text class="s4cS" x="70" y="268" text-anchor="middle">2014</text>
+        <text class="s4cS" x="230" y="268" text-anchor="middle">2018</text>
+        <text class="s4cS" x="430" y="268" text-anchor="middle">2023</text>
+
+        <text class="s4cL" x="680" y="62" text-anchor="middle">302 creators with 20+ answers</text>
+        <text class="s4cS" x="680" y="132" text-anchor="middle">most stopped before the end</text>
+        <text class="s4cB" x="680" y="232" text-anchor="middle">51 still answering</text>
+        <text class="s4cS" x="680" y="250" text-anchor="middle">started 2019.4, not 2017.8</text>
+        <text class="s4cS" x="680" y="266" text-anchor="middle">1.32 per answer, not 2.12</text>
+
+        <text class="s4cN" x="30" y="304">A survivor chart compares people who started at different heights of a falling tide, keeping only those still afloat.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - nobody on the right changed their behaviour to produce the 0.876; the filter and the falling line did</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The disagreement: Buffer's LinkedIn analysis points the other way<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Buffer, the scheduling company, published an analysis in 2025 of more than two million LinkedIn posts from over 94,000 accounts on its own platform. Its method compares each account against its own baseline, the same move as the right panel of Part 1, and it reports that going from one post a week to two to five added impressions per post. That is a within-account finding, and it points the opposite way from this bench's per-answer result.</p>
+        <p>Both can be true. LinkedIn is a feed where an algorithm decides who sees a post, and posting more may teach that algorithm to show you; Stack Exchange is search-driven, where an answer is found because someone asked the question. Buffer's data is its own customers, who chose a scheduling tool, and its analysis did not isolate the quality of what was posted. This bench is one site in one field. Neither settles the other, and anyone who says the question is settled is quoting one of them.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>"Post daily to grow" has no source<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A search for the origin of the daily-posting rule turns up vendor guides and creator advice, and no study. Buffer's own frequency guide states that regular posting means "5x more engagement" with no method on the page. Kleon's chapter "Share something small every day" (session 3) is advice about a habit of showing process, not a growth claim, and he follows it with "Don't turn into human spam". When a number travels without its method, treat it as a rumour with a decimal point.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>Ines (constructed) planned five posts a week in session 3.</strong> The bench does not tell her that is wrong. It tells her what five buys: more total engagement in the weeks she manages it, in proportion, and no evidence that the extra posts make each one land better or make next month bigger. If five a week costs her the depth that made her teardown worth reading, the per-answer view says she is trading quality for volume at a rate of zero growth. She moves to two, and spends the difference on making each one a piece of work worth finding.</p>
+    </div>
+  </section>
+
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Before session 5</h2>
+      <span class="tag exercise">30 min</span>
+    </div>
+    <ol>
+      <li><strong>Find one "post more" chart</strong> in the wild and classify it: across people or within one person? Filtered to survivors or not? Per post or per week?</li>
+      <li><strong>Pull your own history</strong> if you have one: posts per month and a per-post engagement number from any platform's analytics. Compare your three busiest months with your three quietest, per post.</li>
+      <li><strong>Rewrite your session 3 cadence</strong> as a number you can keep for twelve weeks without lowering what each post is worth.</li>
+      <li><strong>List where your readers already read.</strong> Session 5 sorts it into owned and rented ground.</li>
+    </ol>
+  </section>
+
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions</h2>
+    </div>
+    <p>Clear all three and session 4 gets stamped in your passport.</p>
+
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · Across 302 creators, the busiest third earn 3.13 score a week and the quietest third 0.34. What does that show?</p>
+      <button class="qopt" type="button">A · That posting more makes each post do better</button>
+      <button class="qopt" type="button">B · That busy creators collect more total score; per answer they earn 1.85 against the quiet third's 2.24, so the weekly gap is volume, not each post landing better, and it compares different people</button>
+      <button class="qopt" type="button">C · That the quiet creators are less skilled</button>
+      <button class="qopt" type="button">D · Nothing, because correlation is never informative</button>
+      <p class="qwhy">The weekly chart counts volume across different people. Changing only the measure to per answer turns the relationship slightly negative. D overcorrects: the correlation is real, it just answers a different question from the one the advice asks.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="3">
+      <p class="qtext">2 · Filtering to the 51 creators still answering at the end raises the correlation from 0.584 to 0.876. Why?</p>
+      <button class="qopt" type="button">A · Survivors learned to post at the right time of day</button>
+      <button class="qopt" type="button">B · The filter removed noisy data, so 0.876 is the true value</button>
+      <button class="qopt" type="button">C · Survivors post more because they are paid</button>
+      <button class="qopt" type="button">D · The quiet creators who stopped are no longer in the data; the survivors also started later and earn less per answer on a site whose voting fell from 7.36 to 0.82 per answer, so the filter, not anyone's behaviour, produced the stronger number</button>
+      <p class="qwhy">The survivor trap: studying only who lasted makes whatever they share look like the cause of lasting. B is the trap stated as a method.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · The break button shuffles each creator's cadence among their own blocks. Why is it there?</p>
+      <button class="qopt" type="button">A · It proves the bench can report "no effect": after shuffling, the same-creator total view falls from 0.660 to about 0, so the flat per-answer and next-block results are measurements, not a widget that always says zero</button>
+      <button class="qopt" type="button">B · It simulates what happens if you post at random times</button>
+      <button class="qopt" type="button">C · It removes the survivor trap</button>
+      <button class="qopt" type="button">D · It is decoration</button>
+      <p class="qwhy">A bench that can only print one answer measures nothing. Shuffling breaks the link between cadence and the block it sat in, so any surviving relationship would be an artefact. None survives.</p>
+    </div>
+
+    <p class="quiz-score"></p>
+  </section>
+
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Sources covered</span>
+      <h2>What this session teaches, and where it came from</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Every correlation, count and average on the bench</span><span class="note">Computed in the browser from 302 accounts and 22,657 answers in the Data Science Stack Exchange data dump of April 2024 (archive.org, CC BY-SA); verified against an independent Python run before any page quoted it</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The survivor and platform-decline views</span><span class="note">Counted from the same dump, including every account that stopped; the seven-block survivor cut-off is a stated choice</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Buffer's LinkedIn posting-frequency analysis, 2025</span><span class="note">Read at source; company data on its own users, observational, quality not isolated; taught as the disagreement, not as a verdict</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">"Post daily to grow" and the "5x more engagement" figure</span><span class="note">No primary source or method located; taught as unverified</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Feed platforms and follower growth</span><span class="note">Not claimed. Stack Exchange has no follower graph; only the mechanism, across versus within and the survivor filter, transfers</span></div>
+    </div>
+    <p class="mono" style="margin-top:14px">Every fact on this page, and its verification tier, is recorded in the course's source map.</p>
+  </section>
+
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 4 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Across vs within</b><span>Who does better is not what posting more does. Hold the person fixed.</span></div>
+      <div class="cheat-item"><b>Per week vs per post</b><span>0.584 per week, -0.070 per answer, same creators. The gap was volume.</span></div>
+      <div class="cheat-item"><b>The survivor trap</b><span>Keep only who lasted and the correlation jumps to 0.876 with no change in anyone's behaviour.</span></div>
+      <div class="cheat-item"><b>Cadence is a volume dial</b><span>Within creator: total 0.660, per answer -0.005, next block 0.004.</span></div>
+      <div class="cheat-item"><b>Break it to trust it</b><span>Shuffle within creator; the effect falls to about 0. A bench must be able to say "nothing".</span></div>
+      <div class="cheat-item"><b>The ground moves</b><span>Site score per answer: 7.36 in 2014, 0.82 in 2023. Rented ground shrinks under everyone.</span></div>
+    </div>
+  </section>
+
+  <div class="callout next">
+    <span class="nx-pill">Next session</span>
+    <p>The bench's quietest number is the loudest lesson for session 5: the whole site's score per answer fell by nine tenths in ten years, and nobody posting there could have changed it. Session 5 is about the ground under the work: where your readers actually read, the difference between an audience you own and one you rent, Nicholas Carr's digital sharecropping, and choosing a format because of the reader rather than the platform's fashion.</p>
+  </div>
+
+  <footer class="pagefoot">
+    <span>Session 4 of 6 · learn-personal-branding-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="03-show-the-work.html">← Prev: Voice and proof: show the work</a> &nbsp;·&nbsp; <a href="05-owned-and-rented-ground.html">Next: Platforms and formats: owned and rented ground →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/cadence-sample.js?v=1"></script>
+<script src="../assets/cadence-live.js?v=1"></script>
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>
